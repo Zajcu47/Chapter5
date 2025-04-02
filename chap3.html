@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Template Mo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <title>Lesson Overview</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <style>
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .nav-buttons a {
+            padding: 10px 20px;
+            background-color: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-buttons a:hover {
+            background-color: #00509e;
+        }
+
+        img {
+            width: 200px;
+            /* Set a uniform width for all images */
+            height: 200px;
+            /* Set a uniform height for all images */
+            object-fit: cover;
+            /* Ensures the image fits within the specified dimensions without distortion */
+            border: 1px solid #ccc;
+            /* Optional: Adds a border around the images for better visibility */
+            margin: 10px;
+            /* Adds spacing between images */
+        }
+
+        .answer-choice {
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .answer-choice:hover {
+            background-color: #f0f0f0;
+        }
+
+        .selected {
+            background-color: #ccc;
+        }
+
+        /* Style for Image and Answer Section */
+        .image-answer-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Style for Each Image Item */
+        .image-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+        }
+
+        /* Style for Images */
+        .image-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* Style for Answer Input */
+        .image-item input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            /* Prevents padding from increasing the width */
+        }
+
+        /* Style for intro act*/
+        .introductory-activity {
+            text-align: center;
+        }
+
+        .header-sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #003366;
+            /* Ensure background color is set */
+        }
+
+        .header-sticky .main-nav a {
+            color: #ffffff;
+        }
+
+        .header-sticky .main-nav .has-sub>a {
+            color: #ffffff;
+        }
+
+        .header-sticky .main-nav .sub-menu a {
+            color: #003366;
+        }
+
+        .header-sticky .main-nav .sub-menu a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky" style="background-color: #003366;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <a href="#" class="logo" style="color: #ffffff; cursor: default;">Chapter 5</a>
+
+                    <ul class="nav">
+                        <li class="scroll-to-section"><a href="index.html" class="active"
+                                style="color: #ffffff;">Home</a></li>
+
+                        <li class="has-sub">
+                            <a href="javascript:void(0)" style="color: #ffffff;">Lessons</a>
+                            <ul class="sub-menu">
+                                <li><a href="chap1.html" style="color: #003366;">LO1: Diagnose</a></li>
+                                <li><a href="chap2.html" style="color: #003366;">LO2: Plan</a></li>
+                                <li><a href="chap3.html" style="color: #003366;">LO3: Inspect</a></li>
+                                <li><a href="chap4.html" style="color: #003366;">LO4: Rectify</a></li>
+                                <li><a href="chap5.html" style="color: #003366;">LO5: Maintain</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="references.html" style="color: #ffffff;">References</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ***** Header Area End ***** -->
+<section class="heading-page header-text" id="top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Module 3: Rectify / Correct Defects in Computer Systems and Networks</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="meetings-page" id="meetings">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="meeting-single-item">
+                    <div class="down-content">
+                        <h2 style="color: #003366;">Lesson 3: Rectify / Correct Defects in Computer Systems and Networks
+                        </h2>
+
+
+                        <section class="introductory-activity">
+                            <h3>Introductory Activity</h3>
+                            <p>LESSON 3: Rectify / correct defects in computer systems and network</p>
+                            <ul>
+                                <li>Let's Us Try</li>
+                                <li>The previous lesson explained diagnosing issues of computer systems and networks.
+                                    Can you still remember them? Take time to recall some of the previous lessons by
+                                    answering the following questions.</li>
+                                <li>Directions: Identify the name of the image and write it on the blank.</li>
+                            </ul>
+                            <div class="image-answer-container">
+                                <!-- Image 1 -->
+                                <div class="image-item">
+                                    <img src="images/Pic1.jpg" alt="LAN Tester">
+                                    <input type="text" placeholder="Write your answer here" data-answer="lan tester">
+                                    <a href="https://www.makotekcomputers.com/products/lan-testerr"
+                                        target="_blank">Image Source</a>
+                                </div>
+                                <!-- Image 2 -->
+                                <div class="image-item">
+                                    <img src="images/Pic2.jpg" alt="Electric Safety Wire">
+                                    <input type="text" placeholder="Write your answer here"
+                                        data-answer="electric safety wire">
+                                    <a href="https://www.wikihow.com/Ping-an-IP-Address" target="_blank">Image
+                                        Source</a>
+                                </div>
+                                <!-- Image 3 -->
+                                <div class="image-item">
+                                    <img src="images/Pic3.png" alt="Ping">
+                                    <input type="text" placeholder="Write your answer here" data-answer="ping">
+                                    <a href="https://acsdata.com/how-hard-drives-work/
+                                        " target="_blank">Image Source</a>
+                                </div>
+                                <!-- Image 4 -->
+                                <div class="image-item">
+                                    <img src="images/Pic4.png" alt="Check Ping">
+                                    <input type="text" placeholder="Write your answer here" data-answer="check ping">
+                                    <a href="https://www.hostinger.in/tutorials/what-is-nslookup" target="_blank">Image
+                                        Source</a>
+                                </div>
+                                <!-- Image 5 -->
+                                <div class="image-item">
+                                    <img src="images/Pic5.jpg" alt="Hard Drive">
+                                    <input type="text" placeholder="Write your answer here" data-answer="hardrive">
+                                    <a href="https://ph.rs-online.com/web/p/esd-grounding/1975457" target="_blank">Image
+                                        Source</a>
+                                </div>
+                            </div>
+
+                            <!-- Check Answer Button -->
+                            <button id="checkAnswerButton">Check Answers</button>
+                            <!-- Feedback Section -->
+                            <div id="feedback"></div>
+                        </section>
+                        <script>
+                            document.getElementById("checkAnswerButton").addEventListener("click", function () {
+                                const feedback = document.getElementById("feedback");
+                                feedback.innerHTML = ""; // Clear previous feedback
+
+                                const inputs = document.querySelectorAll(".image-item input[type='text']");
+                                let correctCount = 0;
+
+                                inputs.forEach((input) => {
+                                    const userAnswer = input.value.trim().toLowerCase();
+                                    const correctAnswer = input.dataset.answer.toLowerCase();
+
+                                    if (userAnswer === correctAnswer) {
+                                        correctCount++;
+                                        feedback.innerHTML += `<p style="color: green;">Correct for image: ${input.previousElementSibling.alt}</p>`;
+                                    } else if (userAnswer === "") {
+                                        feedback.innerHTML += `<p style="color: orange;">No answer provided for image: ${input.previousElementSibling.alt}. Correct answer is "${correctAnswer}".</p>`;
+                                    } else {
+                                        feedback.innerHTML += `<p style="color: red;">Incorrect for image: ${input.previousElementSibling.alt}. Correct answer is "${correctAnswer}".</p>`;
+                                    }
+                                });
+
+                                feedback.innerHTML += `<p><strong>Total Correct Answers: ${correctCount} out of ${inputs.length}</strong></p>`;
+
+                                // Clear feedback after 8 seconds
+                                setTimeout(function () {
+                                    feedback.innerHTML = "";
+                                }, 8000); // 8000 milliseconds = 8 seconds
+                            });
+
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <a href="chap2-3.html">Back</a>
+            <a href="chap3-2.html">Next</a>
+        </div>
+        <div class="footer">
+            <p>Copyright © 2022 Edu Meeting Co., Ltd. All Rights Reserved.
+                <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

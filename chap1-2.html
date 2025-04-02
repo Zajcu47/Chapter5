@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Template Mo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Chapter 5: Maintain and Repair Computer Systems and Networks</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <style>
+         .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        .img-fluid {
+            width: 90%;
+            /* Increased width */
+            max-width: 500px;
+            /* Maximum width to prevent excessive stretching */
+            height: auto;
+            /* Maintain aspect ratio */
+            max-height: 300px;
+            /* Reduce maximum height */
+            margin-bottom: 5px;
+            /* Space below the image */
+            display: block;
+            /* Ensure image is on its own line */
+            margin-left: auto;
+            /* Center the image */
+            margin-right: auto;
+            /* Center the image */
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .nav-buttons a {
+            padding: 10px 20px;
+            background-color: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-buttons a:hover {
+            background-color: #00509e;
+        }
+
+        /* Style for image source link */
+        .image-source {
+            font-size: 0.8em;
+            display: block;
+            margin-bottom: 15px;
+            text-align: center;
+            /* Center the link */
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .nav-buttons a {
+            padding: 10px 20px;
+            background-color: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-buttons a:hover {
+            background-color: #00509e;
+        }
+
+        /* Add spacing between sections */
+        section {
+            margin-bottom: 50px;
+        }
+
+        /* Add spacing before each heading */
+        h3 {
+            margin-top: 40px;
+        }
+
+        /* Space between Objectives and Lesson Proper */
+        .objectives-section {
+            margin-bottom: 40px;
+        }
+
+        /* Space between topic sections */
+        .topic-section {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        /* Indent list items */
+        ol li,
+        ul li {
+            margin-bottom: 10px;
+            /* Adds space between list items */
+        }
+
+        /* Expanded text for Testing Procedures */
+        .testing-procedures-content {
+            font-size: 1.1em;
+            /* Slightly larger font size */
+            line-height: 1.6;
+            /* Increased line height for readability */
+            margin-bottom: 15px;
+            /* Space below the text */
+        }
+
+        .header-sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #003366;
+            /* Ensure background color is set */
+        }
+
+        .header-sticky .main-nav a {
+            color: #ffffff;
+        }
+
+        .header-sticky .main-nav .has-sub>a {
+            color: #ffffff;
+        }
+
+        .header-sticky .main-nav .sub-menu a {
+            color: #003366;
+        }
+
+        .header-sticky .main-nav .sub-menu a:hover {
+            color: #ffffff;
+        }
+
+        /* Add spacing between sections */
+        section {
+            margin-bottom: 30px;
+        }
+
+        /* Add spacing before each heading */
+        h3 {
+            margin-top: 20px;
+        }
+
+        /* Space between Objectives and Lesson Proper */
+        .objectives-section {
+            margin-bottom: 40px;
+        }
+
+        /* Space between topic sections */
+        .topic-section {
+            margin-top: 70px;
+            margin-bottom: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky" style="background-color: #003366;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <a href="#" class="logo" style="color: #ffffff; cursor: default;">Chapter 5</a>
+
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="index.html" class="active"
+                                    style="color: #ffffff;">Home</a></li>
+
+                            <li class="has-sub">
+                                <a href="javascript:void(0)" style="color: #ffffff;">Lessons</a>
+                                <ul class="sub-menu">
+                                    <li><a href="chap1.html" style="color: #003366;">LO1: Diagnose</a></li>
+                                    <li><a href="chap2.html" style="color: #003366;">LO2: Plan</a></li>
+                                    <li><a href="chap3.html" style="color: #003366;">LO3: Inspect</a></li>
+                                    <li><a href="chap4.html" style="color: #003366;">LO4: Rectify</a></li>
+                                    <li><a href="chap5.html" style="color: #003366;">LO5: Maintain</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="references.html" style="color: #ffffff;">References</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <section class="heading-page header-text" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Module 1: Diagnose faults for Computer Systems and Networks</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="meetings-page" id="meetings">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="meeting-single-item">
+                        <div class="down-content">
+                            <div class="lesson">
+                                <h2 style="color: #003366;">1.1: Purpose of Diagnostic Tools</h2>
+                                <img src="images/chapter1/diagnostictools.png" alt="Diagnostic Tools"
+                                    class="img-fluid mb-3">
+                                <a href="https://www.shareus.com/software/five-free-windows-hardware-diagnostic-tools-to-check-your-computer.html"
+                                    class="image-source">Image Source
+                                </a>
+                                <h4>1.1 What is a Diagnostic Tool?</h4>
+
+                                <p>
+                                    A <strong>diagnostic tool</strong> refers to both software and hardware utilities
+                                    used by IT professionals to detect, analyze, and resolve issues in computer systems
+                                    or networks. These tools help identify performance problems, faulty components, and
+                                    network issues. Diagnostic tools can range from simple programs that check system
+                                    health to complex applications that analyze intricate system and network
+                                    interactions. Their importance cannot be overstated as they help ensure the
+                                    continued functionality and performance of systems, saving time, reducing downtime,
+                                    and improving user experience.
+                                </p>
+
+                                <p>&nbsp;</p> <!-- Adding a line break for spacing -->
+
+                                <p>
+                                    <strong>Examples of Diagnostic Tools:</strong><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>• Hardware Diagnostic Tools:</strong> These include
+                                    tools like the built-in memory diagnostic tool in Windows or third-party software
+                                    such as MemTest86 to check the health of system memory (RAM).<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>• Network Diagnostic Tools:</strong> Programs like
+                                    Wireshark or NetFlow Analyzer help identify network traffic issues, monitor
+                                    bandwidth usage, and diagnose connectivity issues.<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>• System Diagnostic Tools:</strong> Examples include
+                                    CPU-Z for checking processor details, HWMonitor for monitoring hardware health (like
+                                    temperature and voltage), and Speccy for detailed hardware analysis.
+                                </p>
+
+                                <p>&nbsp;</p> <!-- Adding another line break for spacing -->
+
+                                <p>
+                                    <strong>Example:</strong> A system administrator notices that a server is running
+                                    slowly. They could use Task Manager to check CPU and memory usage and Resource
+                                    Monitor to identify which processes are consuming the most resources. If a
+                                    particular application is hogging resources, the administrator can then investigate
+                                    whether it's optimized or needs an update.
+                                </p>
+
+                            </div>
+                            <div class="lesson">
+                                <h2 style="color: #003366;">1.2: System Performance and Monitoring Tools</h2>
+                                <img src="images/chapter1/monitoring.png" alt="Diagnostic Tools" class="img-fluid mb-3">
+                                <a href="https://middleware.io/blog/website-monitoring-tools/"
+                                    class="image-source">Image Source</a>
+
+                                <br>
+                                <br>
+                                
+                                <br>
+                                System performance and monitoring tools are essential for IT professionals to ensure
+                                optimal functioning of their systems. These tools help track various system resources,
+                                identify performance bottlenecks, and take corrective actions before issues
+                                significantly impact system performance.
+                                <br>
+                                <br>
+                                <p>
+                                    <span style="margin-left: 2em;">- <strong>Real-time Monitoring</strong> :</span> Tools track CPU
+                                    usage, memory consumption, disk activity, and network usage in real-time.<br>
+                                    <span style="margin-left: 2em;">- <strong>Performance Metrics</strong>:</span> They provide insights
+                                    into application behavior, user experiences, and underlying infrastructure.<br>
+                                    <span style="margin-left: 2em;">- <strong> Issue Detection</strong></span> These tools help
+                                    identify and resolve performance issues before they escalate.<br>
+                                    <span style="margin-left: 2em;">-<strong> Resource Optimization</strong> :</span> By monitoring system
+                                    resources, IT teams can ensure efficient use of available resources.
+                                </p>
+                                <br>
+                                <p>
+                                    <strong>Example:</strong> An IT administrator notices slow response times on a
+                                    server. Using a tool like ManageEngine Applications Manager, they can monitor
+                                    application performance, server health, and database responsiveness to identify the
+                                    root cause of the slowdown.
+                                </p>
+
+                                <h5 style="color: #000000; margin-top: 20px; font-weight: bold;">
+                                    Popular System Performance and Monitoring Tools
+                                </h5>
+
+                                <ol>
+                                    <li>
+                                        <span style="font-weight: bold;">NinjaOne:</span><br>
+                                        Offers real-time system monitoring, tracking health and performance of endpoints
+                                        across networks. It provides insights into CPU usage, memory utilization, disk
+                                        space, and network performance.
+                                    </li>
+
+                                    <li>
+                                        <span style="font-weight: bold;">ManageEngine Applications Manager:</span><br>
+                                        Monitors on-premises applications, virtual infrastructure, and cloud systems. It
+                                        offers live performance tracking and root cause analysis functions.
+                                    </li>
+
+                                    <li>
+                                        <span style="font-weight: bold;">New Relic APM:</span><br>
+                                        Provides real-time insights into application behavior, user experiences, and
+                                        underlying infrastructure. It offers comprehensive performance monitoring for
+                                        applications, servers, databases, and infrastructure.
+                                    </li>
+
+                                    <li>
+                                        <span style="font-weight: bold;">AppDynamics APM:</span><br>
+                                        Offers end-to-end visibility into application performance and helps identify
+                                        root causes of problems in real-time. It can analyze applications at the code
+                                        execution level and measure end-to-end business transaction performance.
+                                    </li>
+                                </ol>
+
+                                <h5 style="color: #000000; margin-top: 20px; font-weight: bold;">
+                                    Key Features of System Performance and Monitoring Tools
+                                </h5>
+                            
+                                <ol>
+                                    <li>
+                                        <span style="font-weight: bold; margin-left: 2em;">Real-time Monitoring:</span><br>
+                                        Continuous tracking of system resources and application performance metrics.
+                                    </li>
+                            
+                                    <li>
+                                        <span style="font-weight: bold;margin-left: 2em;">Alerting Systems:</span><br>
+                                        Proactive notifications when performance thresholds are reached or anomalies are detected.
+                                    </li>
+                            
+                                    <li>
+                                        <span style="font-weight: bold;margin-left: 2em;">Performance Analytics:</span><br>
+                                        Detailed insights and reports on system and application performance over time.
+                                    </li>
+                            
+                                    <li>
+                                        <span style="font-weight: bold;margin-left: 2em;">Root Cause Analysis:</span><br>
+                                        Tools to help identify the underlying causes of performance issues.
+                                    </li>
+                                </ol>
+                            </div>
+
+
+                            <div class="lesson">
+                                <h2 style="color: #003366;">1.3: Network Troubleshooting Tools</h2>
+                                <img src="images/chapter1/networktroubleshooting.png" alt="Diagnostic Tools"
+                                    class="img-fluid mb-3">
+                                <a href="https://cisco4ukraine.pl/network-technician/network-addressing-and-basic-troubleshooting/"
+                                    class="image-source">Image Source</a>
+
+                                <br>
+                                Network troubleshooting tools are essential for diagnosing and resolving connectivity
+                                issues such as slow internet, lost packets, or downtime. Tools like Ping, Tracert
+                                (Traceroute), and nslookup are crucial for troubleshooting network connectivity.
+
+                                <p>
+                                    <span style="margin-left: 2em;">- Ping:</span> Used to test if a remote host (like a
+                                    website or server) is reachable. It sends small packets to the destination and
+                                    measures response time. Packet loss or high response times indicate network
+                                    issues.<br>
+                                    <span style="margin-left: 2em;">- Tracert (Traceroute):</span> Helps identify the
+                                    route data takes to reach its destination, showing each hop along the path to
+                                    pinpoint connection issues.<br>
+                                    <span style="margin-left: 2em;">- nslookup:</span> Queries DNS servers for domain
+                                    name information, aiding in DNS-related issue troubleshooting.
+                                </p>
+
+                                <p>
+                                    <strong>Example:</strong> If a user cannot access a website, the administrator uses
+                                    Ping to check if the domain is reachable. If Ping fails, they use Tracert to
+                                    identify any router issues along the path. If Tracert shows no routing problems,
+                                    they might use nslookup to check for DNS resolution errors.
+                                </p>
+
+                                <h4>Using Ping Command</h4>
+                                <br>
+                                To use the Ping command for connectivity testing:
+
+                                <p>
+                                    <span style="margin-left: 2em;">1. Open Command Prompt:</span> Press Windows Key +
+                                    R, type <code>cmd</code>, and press Enter.<br>
+                                    <span style="margin-left: 2em;">2. Run the Ping Command:</span> Type
+                                    <code>ping google.com</code> (or any domain/IP) and press Enter. This sends a
+                                    request to the server and measures round-trip time.<br>
+                                    <span style="margin-left: 2em;">3. Analyze Results:</span> Successful pings show
+                                    response times; failures indicate potential connectivity issues.
+                                </p>
+
+                                <h4>Using Tracert (Traceroute) Command</h4>
+                                <br>
+                                To use Tracert for route identification:
+
+                                <p>
+                                    <span style="margin-left: 2em;">1. Open Command Prompt:</span> Press Windows Key +
+                                    R, type <code>cmd</code>, and press Enter.<br>
+                                    <span style="margin-left: 2em;">2. Run the Tracert Command:</span> Type
+                                    <code>tracert google.com</code> (or any domain) and press Enter. This displays each
+                                    hop to the destination, showing response times.<br>
+                                    <span style="margin-left: 2em;">3. Analyze Results:</span> Look for delays or
+                                    timeouts at specific hops to identify connection issues.
+                                </p>
+
+                                <h4>Using nslookup Command</h4>
+                                <br>
+                                To use nslookup for DNS troubleshooting:
+
+                                <p>
+                                    <span style="margin-left: 2em;">1. Open Command Prompt:</span> Press Windows Key +
+                                    R, type <code>cmd</code>, and press Enter.<br>
+                                    <span style="margin-left: 2em;">2. Run the nslookup Command:</span> Type
+                                    <code>nslookup google.com</code> and press Enter. This resolves the domain name to
+                                    an IP address.<br>
+                                    <span style="margin-left: 2em;">3. Analyze Results:</span> Successful queries show
+                                    the resolved IP; errors indicate DNS issues.
+                                </p>
+
+                                <h4>Advanced Network Troubleshooting Tools</h4>
+                                <br>
+                                For more complex network diagnostics, consider these tools:
+
+                                <p>
+                                    <span style="margin-left: 2em;">1. Wireshark:</span> A packet analysis tool for
+                                    granular network troubleshooting.<br>
+                                    <span style="margin-left: 2em;">2. Netstat:</span> Displays active connections and
+                                    port usage, useful for diagnosing application-specific issues.<br>
+                                    <span style="margin-left: 2em;">3. Ipconfig/Ifconfig:</span> Provides IP
+                                    configuration details for network adapters, aiding in DHCP-related troubleshooting.
+                                </p>
+                            </div>
+
+
+
+                            <div class="lesson">
+                                <h2 style="color: #003366;"> 1.4: Disk and File System Diagnosis</h2>
+                                <img src="images/chapter1/harddrive.png" alt="Diagnostic Tools" class="img-fluid mb-3">
+                                <a href="https://www.sweetwater.com/sweetcare/articles/hard-drive-file-systems-and-why-they-matter/"
+                                    class="image-source">Image Source
+                                </a>
+
+
+                                <br>
+                                Disk and file system diagnosis is crucial for maintaining the health and performance of
+                                computer systems. It involves identifying and resolving issues related to hard drives,
+                                file systems, and data storage. Various tools and techniques are available to perform
+                                these diagnostics and ensure optimal system functioning.
+
+                                <p>
+                                    <span style="margin-left: 2em;">- Hard Drive Error Checking:</span> Identifies and
+                                    repairs issues like bad sectors, corrupted files, or mechanical failures.<br>
+                                    <span style="margin-left: 2em;">- CHKDSK (Check Disk):</span> A built-in Windows
+                                    tool that scans and repairs file system issues or bad sectors on hard drives.<br>
+                                    <span style="margin-left: 2em;">- SMART Monitoring:</span> Uses Self-Monitoring,
+                                    Analysis, and Reporting Technology to detect potential disk failures before they
+                                    occur.<br>
+                                    <span style="margin-left: 2em;">- Disk Health Tools:</span> Software like
+                                    CrystalDiskInfo or HD Tune that show drive health status, temperature, and error
+                                    logs.
+                                </p>
+
+                                <p>
+                                    <strong>Example:</strong> An IT technician notices intermittent system crashes. They
+                                    run CHKDSK on the affected hard drive, which reveals and repairs a few bad sectors,
+                                    preventing further crashes. Additionally, CrystalDiskInfo shows deteriorating disk
+                                    health, prompting the technician to recommend replacing the drive soon.
+                                </p>
+
+                                <h5 style="color: #000000; margin-top: 20px; font-weight: bold;">
+                                    Using CHKDSK Command (Windows)
+                                </h5>
+
+                                <ol>
+                                    <li>
+                                        <span style="font-weight: bold;margin-left: 2em;">Open Command Prompt as
+                                            Administrator:</span><br>
+                                        Press Windows Key + X and select Command Prompt (Admin) or Windows PowerShell
+                                        (Admin).
+                                    </li>
+
+                                    <li>
+                                        <span style="font-weight: bold;margin-left: 2em;">Run CHKDSK Command:</span><br>
+                                        Type <code>chkdsk C: /f</code> and press Enter. <code>C:</code> is the drive
+                                        letter (you can change it to any drive you want to scan). <code>/f</code> will
+                                        attempt to fix any errors found on the drive.
+                                    </li>
+
+                                    <li>
+                                        <span style="font-weight: bold;margin-left: 2em;">Schedule a Disk Check (if required):</span><br>
+                                        If the drive is in use (like the system drive), you will be asked to schedule
+                                        the check for the next restart. Type Y and press Enter.
+                                    </li>
+
+                                    <li>
+                                        <span style="font-weight: bold;margin-left: 2em;">Reboot and Wait:</span><br>
+                                        Restart your computer. CHKDSK will scan and attempt to fix any issues on the
+                                        specified drive before the system boots up.
+                                    </li>
+                                </ol>
+
+                                <h5 style="color: #000000; margin-top: 20px; font-weight: bold;">
+                                    Using SMART Monitoring Tools
+                                </h5>
+
+                                <ol>
+                                    <li>
+                                        <span style="font-weight: bold;margin-left: 2em;">Download a SMART Monitoring Tool:</span><br>
+                                        Install software like CrystalDiskInfo or HD Tune.
+                                    </li>
+
+                                    <li>
+                                        <span style="font-weight: bold;margin-left: 2em;">Check Disk Health:</span><br>
+                                        Launch the software and it will display your disk's health status, including
+                                        temperature, errors, and overall health.
+                                    </li>
+
+                                    <li>
+                                        <span style="font-weight: bold;margin-left: 2em;">Take Action:</span><br>
+                                        If the tool reports that the disk is failing or has bad sectors, it may be time
+                                        to back up data and consider replacing the drive.
+                                    </li>
+                                </ol>
+
+
+                                <div class="lesson">
+                                    <h2 style="color: #003366;">1.5: Event Logs and System Logs</h2>
+                                    <img src="images/chapter1/logs.png" alt="Diagnostic Tools" class="img-fluid mb-3">
+                                    <a href="https://www.imprivata.com/uk/node/100316" class="image-source">Image
+                                        Source</a>
+
+                                    <p>
+                                        <strong> Troubleshooting System Crashes</strong><br>
+                                        Event logs provide a detailed record of the system’s operations, including
+                                        errors, warnings, and information about software or hardware events.
+                                        <strong>Event Viewer</strong> in Windows allows IT professionals to analyze
+                                        these logs to identify the causes of system crashes, application failures, and
+                                        other issues.
+                                    </p>
+
+                                    <p>
+                                        <strong>Event Viewer:</strong> This tool categorizes events into Application,
+                                        Security, and System logs. The logs help IT professionals identify critical
+                                        errors or warnings that occurred prior to a system crash.
+                                    </p>
+
+                                    <p>
+                                        <strong>Log Types:</strong><br>
+                                        <strong>Critical:</strong> Serious issues that require immediate attention, such
+                                        as system failures.<br>
+                                        <strong>Error:</strong> Problems that may affect system functionality but not
+                                        necessarily cause a system failure.<br>
+                                        <strong>Warning:</strong> Non-critical issues that may become problematic if not
+                                        addressed.
+                                    </p>
+
+                                    <p>
+                                        <strong>Example:</strong> A server unexpectedly shuts down, and users are unable
+                                        to access services. The IT administrator opens Event Viewer and finds a critical
+                                        error indicating that a memory module failed. After confirming the hardware
+                                        failure, the technician replaces the faulty RAM, preventing future shutdowns.
+                                    </p>
+
+                                    <h4>Troubleshooting System Crashes</h4>
+
+                                    <h5>Using Event Viewer (Windows)</h5>
+                                    <ol>
+                                        <li>
+                                            <strong>Open Event Viewer:</strong><br>
+                                            Press Windows Key + R, type <code>eventvwr.msc</code>, and press Enter.
+                                        </li>
+                                        <li>
+                                            <strong>Browse the Event Logs:</strong><br>
+                                            In the Event Viewer window, expand Windows Logs and select System or
+                                            Application to view system and application events. Look for entries under
+                                            Error or Critical categories.
+                                        </li>
+                                        <li>
+                                            <strong>Analyze Log Entries:</strong><br>
+                                            Double-click on an event to see its details. Look for error codes,
+                                            timestamps, and descriptions that can indicate what caused the issue. For
+                                            example, an Event ID 41 (Kernel-Power) error may indicate unexpected
+                                            shutdowns due to hardware issues, while an Event ID 1001 might indicate
+                                            application crashes.
+                                        </li>
+                                        <li>
+                                            <strong>Resolve the Issues:</strong><br>
+                                            Use the information in the event logs to troubleshoot the root cause. For
+                                            example, if a driver is causing crashes, updating or reinstalling the driver
+                                            might resolve the issue.
+                                        </li>
+                                    </ol>
+                                </div>
+
+                                <h2>Practice Activity</h2>
+                                <form>
+                                    <!-- Question 1 -->
+                                    <div class="practice-question">
+                                        <label for="question1">1. The ________ is responsible for keeping the processor
+                                            cool
+                                            by dissipating heat.</label>
+                                        <select id="question1" class="form-select" required>
+                                            <option value="" disabled selected>Select your answer</option>
+                                            <option value="Heatsink/Fan">Heatsink/Fan</option>
+                                            <option value="Antivirus">Antivirus</option>
+                                            <option value="Cable Tester">Cable Tester</option>
+                                            <option value="Ping">Ping</option>
+                                            <option value="Multimeter">Multimeter</option>
+                                            <option value="RAM">RAM</option>
+                                            <option value="Uninterruptible Power Supply (UPS)">Uninterruptible Power
+                                                Supply
+                                                (UPS)</option>
+                                            <option value="Cooling">Cooling</option>
+                                            <option value="Preventive">Preventive</option>
+                                            <option value="Event Viewer">Event Viewer</option>
+                                        </select>
+                                        <span id="result1"></span>
+                                    </div>
+
+                                    <!-- Question 2 -->
+                                    <div class="practice-question">
+                                        <label for="question2">2. To scan and remove malicious software, a technician
+                                            should
+                                            use an ________ program.</label>
+                                        <select id="question2" class="form-select" required>
+                                            <option value="" disabled selected>Select your answer</option>
+                                            <option value="Heatsink/Fan">Heatsink/Fan</option>
+                                            <option value="Antivirus">Antivirus</option>
+                                            <option value="Cable Tester">Cable Tester</option>
+                                            <option value="Ping">Ping</option>
+                                            <option value="Multimeter">Multimeter</option>
+                                            <option value="RAM">RAM</option>
+                                            <option value="Uninterruptible Power Supply (UPS)">Uninterruptible Power
+                                                Supply
+                                                (UPS)</option>
+                                            <option value="Cooling">Cooling</option>
+                                            <option value="Preventive">Preventive</option>
+                                            <option value="Event Viewer">Event Viewer</option>
+                                        </select>
+                                        <span id="result2"></span>
+                                    </div>
+
+                                    <!-- Question 3 -->
+                                    <div class="practice-question">
+                                        <label for="question3">3. A ________ is used to test if a network cable is
+                                            functioning correctly.</label>
+                                        <select id="question3" class="form-select" required>
+                                            <option value="" disabled selected>Select your answer</option>
+                                            <option value="Heatsink/Fan">Heatsink/Fan</option>
+                                            <option value="Antivirus">Antivirus</option>
+                                            <option value="Cable Tester">Cable Tester</option>
+                                            <option value="Ping">Ping</option>
+                                            <option value="Multimeter">Multimeter</option>
+                                            <option value="RAM">RAM</option>
+                                            <option value="Uninterruptible Power Supply (UPS)">Uninterruptible Power
+                                                Supply
+                                                (UPS)</option>
+                                            <option value="Cooling">Cooling</option>
+                                            <option value="Preventive">Preventive</option>
+                                            <option value="Event Viewer">Event Viewer</option>
+                                        </select>
+                                        <span id="result3"></span>
+                                    </div>
+
+                                    <!-- Question 4 -->
+                                    <div class="practice-question">
+                                        <label for="question4">4. The command used to check the network connection to
+                                            another device is ________.</label>
+                                        <select id="question4" class="form-select" required>
+                                            <option value="" disabled selected>Select your answer</option>
+                                            <option value="Heatsink/Fan">Heatsink/Fan</option>
+                                            <option value="Antivirus">Antivirus</option>
+                                            <option value="Cable Tester">Cable Tester</option>
+                                            <option value="Ping">Ping</option>
+                                            <option value="Multimeter">Multimeter</option>
+                                            <option value="RAM">RAM</option>
+                                            <option value="Uninterruptible Power Supply (UPS)">Uninterruptible Power
+                                                Supply
+                                                (UPS)</option>
+                                            <option value="Cooling">Cooling</option>
+                                            <option value="Preventive">Preventive</option>
+                                            <option value="Event Viewer">Event Viewer</option>
+                                        </select>
+                                        <span id="result4"></span>
+                                    </div>
+
+                                    <!-- Question 5 -->
+                                    <div class="practice-question">
+                                        <label for="question5">5. A _________ is used to measure electrical signals in a
+                                            circuit and diagnose power-related issues.</label>
+                                        <select id="question5" class="form-select" required>
+                                            <option value="" disabled selected>Select your answer</option>
+                                            <option value="Heatsink/Fan">Heatsink/Fan</option>
+                                            <option value="Antivirus">Antivirus</option>
+                                            <option value="Cable Tester">Cable Tester</option>
+                                            <option value="Ping">Ping</option>
+                                            <option value="Multimeter">Multimeter</option>
+                                            <option value="RAM">RAM</option>
+                                            <option value="Uninterruptible Power Supply (UPS)">Uninterruptible Power
+                                                Supply
+                                                (UPS)</option>
+                                            <option value="Cooling">Cooling</option>
+                                            <option value="Preventive">Preventive</option>
+                                            <option value="Event Viewer">Event Viewer</option>
+                                        </select>
+                                        <span id="result5"></span>
+                                    </div>
+
+                                    <!-- Question 6 -->
+                                    <div class="practice-question">
+                                        <label for="question6">6. If a computer fails to boot, a technician should check
+                                            the
+                                            _________ module to ensure it is properly seated.</label>
+                                        <select id="question6" class="form-select" required>
+                                            <option value="" disabled selected>Select your answer</option>
+                                            <option value="Heatsink/Fan">Heatsink/Fan</option>
+                                            <option value="Antivirus">Antivirus</option>
+                                            <option value="Cable Tester">Cable Tester</option>
+                                            <option value="Ping">Ping</option>
+                                            <option value="Multimeter">Multimeter</option>
+                                            <option value="RAM">RAM</option>
+                                            <option value="Uninterruptible Power Supply (UPS)">Uninterruptible Power
+                                                Supply
+                                                (UPS)</option>
+                                            <option value="Cooling">Cooling</option>
+                                            <option value="Preventive">Preventive</option>
+                                            <option value="Event Viewer">Event Viewer</option>
+                                        </select>
+                                        <span id="result6"></span>
+                                    </div>
+
+                                    <!-- Question 7 -->
+                                    <div class="practice-question">
+                                        <label for="question7">7. A _________ is used to protect a computer from sudden
+                                            power surges and outages.</label>
+                                        <select id="question7" class="form-select" required>
+                                            <option value="" disabled selected>Select your answer</option>
+                                            <option value="Heatsink/Fan">Heatsink/Fan</option>
+                                            <option value="Antivirus">Antivirus</option>
+                                            <option value="Cable Tester">Cable Tester</option>
+                                            <option value="Ping">Ping</option>
+                                            <option value="Multimeter">Multimeter</option>
+                                            <option value="RAM">RAM</option>
+                                            <option value="Uninterruptible Power Supply (UPS)">Uninterruptible Power
+                                                Supply
+                                                (UPS)</option>
+                                            <option value="Cooling">Cooling</option>
+                                            <option value="Preventive">Preventive</option>
+                                            <option value="Event Viewer">Event Viewer</option>
+                                        </select>
+                                        <span id="result7"></span>
+                                    </div>
+
+                                    <!-- Question 8 -->
+                                    <div class="practice-question">
+                                        <label for="question8">8. Regularly cleaning dust from a computer prevents
+                                            _________
+                                            issues that can cause overheating.</label>
+                                        <select id="question8" class="form-select" required>
+                                            <option value="" disabled selected>Select your answer</option>
+                                            <option value="Heatsink/Fan">Heatsink/Fan</option>
+                                            <option value="Antivirus">Antivirus</option>
+                                            <option value="Cable Tester">Cable Tester</option>
+                                            <option value="Ping">Ping</option>
+                                            <option value="Multimeter">Multimeter</option>
+                                            <option value="RAM">RAM</option>
+                                            <option value="Uninterruptible Power Supply (UPS)">Uninterruptible Power
+                                                Supply
+                                                (UPS)</option>
+                                            <option value="Cooling">Cooling</option>
+                                            <option value="Preventive">Preventive</option>
+                                            <option value="Event Viewer">Event Viewer</option>
+                                        </select>
+                                        <span id="result8"></span>
+                                    </div>
+
+                                    <!-- Question 9 -->
+                                    <div class="practice-question">
+                                        <label for="question9">9. _________ maintenance helps prevent future system
+                                            failures
+                                            by keeping hardware and software up to date.</label>
+                                        <select id="question9" class="form-select" required>
+                                            <option value="" disabled selected>Select your answer</option>
+                                            <option value="Heatsink/Fan">Heatsink/Fan</option>
+                                            <option value="Antivirus">Antivirus</option>
+                                            <option value="Cable Tester">Cable Tester</option>
+                                            <option value="Ping">Ping</option>
+                                            <option value="Multimeter">Multimeter</option>
+                                            <option value="RAM">RAM</option>
+                                            <option value="Uninterruptible Power Supply (UPS)">Uninterruptible Power
+                                                Supply
+                                                (UPS)</option>
+                                            <option value="Cooling">Cooling</option>
+                                            <option value="Preventive">Preventive</option>
+                                            <option value="Event Viewer">Event Viewer</option>
+                                        </select>
+                                        <span id="result9"></span>
+                                    </div>
+
+                                    <!-- Question 10 -->
+                                    <div class="practice-question">
+                                        <label for="question10">10. The _________ tool in Windows is used to view system
+                                            logs and diagnose errors.</label>
+                                        <select id="question10" class="form-select" required>
+                                            <option value="" disabled selected>Select your answer</option>
+                                            <option value="Heatsink/Fan">Heatsink/Fan</option>
+                                            <option value="Antivirus">Antivirus</option>
+                                            <option value="Cable Tester">Cable Tester</option>
+                                            <option value="Ping">Ping</option>
+                                            <option value="Multimeter">Multimeter</option>
+                                            <option value="RAM">RAM</option>
+                                            <option value="Uninterruptible Power Supply (UPS)">Uninterruptible Power
+                                                Supply
+                                                (UPS)</option>
+                                            <option value="Cooling">Cooling</option>
+                                            <option value="Preventive">Preventive</option>
+                                            <option value="Event Viewer">Event Viewer</option>
+                                        </select>
+                                        <span id="result10"></span>
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <button type="button" class="submit-button" onclick="checkAnswers()">Submit
+                                        Answers</button>
+                                </form>
+
+                                <script>
+                                    function checkAnswers() {
+                                        const correctAnswers = [
+                                            "Heatsink/Fan",
+                                            "Antivirus",
+                                            "Cable Tester",
+                                            "Ping",
+                                            "Multimeter",
+                                            "RAM",
+                                            "Uninterruptible Power Supply (UPS)",
+                                            "Cooling",
+                                            "Preventive",
+                                            "Event Viewer"
+                                        ];
+
+                                        for (let i = 1; i <= 10; i++) {
+                                            const userAnswer = document.getElementById(`question${i}`).value;
+                                            const correctAnswer = correctAnswers[i - 1];
+                                            const resultSpan = document.getElementById(`result${i}`);
+
+                                            if (userAnswer === correctAnswer) {
+                                                resultSpan.textContent = "Correct!";
+                                                resultSpan.className = "correct";
+                                            } else {
+                                                resultSpan.textContent = `Incorrect. The correct answer is ${correctAnswer}.`;
+                                                resultSpan.className = "incorrect";
+                                            }
+                                        }
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-buttons">
+                        <a href="chap1.html">Back</a>
+                        <a href="chap1-3.html">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Template Mo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Module 5: Maintain Computer Systems and Networks</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <style>
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .nav-buttons a {
+            padding: 10px 20px;
+            background-color: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-buttons a:hover {
+            background-color: #00509e;
+        }
+
+        .header-area.header-sticky {
+            min-height: 80px;
+        }
+
+        .header-sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #003366;
+            /* Ensure background color is set */
+        }
+
+        .header-sticky .main-nav a {
+            color: #ffffff;
+        }
+
+        .header-sticky .main-nav .has-sub>a {
+            color: #ffffff;
+        }
+
+        .header-sticky .main-nav .sub-menu a {
+            color: #003366;
+        }
+
+        .header-sticky .main-nav .sub-menu a:hover {
+            color: #ffffff;
+        }
+
+
+        .main-content {
+            padding-top: 70px;
+            /* Adjust based on the height of your header */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky" style="background-color: #003366;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <a href="#" class="logo" style="color: #ffffff; cursor: default;">Chapter 5</a>
+
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="index.html" class="active"
+                                    style="color: #ffffff;">Home</a></li>
+
+                            <li class="has-sub">
+                                <a href="javascript:void(0)" style="color: #ffffff;">Lessons</a>
+                                <ul class="sub-menu">
+                                    <li><a href="chap1.html" style="color: #003366;">LO1: Diagnose</a></li>
+                                    <li><a href="chap2.html" style="color: #003366;">LO2: Plan</a></li>
+                                    <li><a href="chap3.html" style="color: #003366;">LO3: Inspect</a></li>
+                                    <li><a href="chap4.html" style="color: #003366;">LO4: Rectify</a></li>
+                                    <li><a href="chap5.html" style="color: #003366;">LO5: Maintain</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="references.html" style="color: #ffffff;">References</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    <section class="heading-page header-text" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Module 5: Maintain Computer Systems and Networks</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="meetings-page" id="meetings">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="meeting-single-item">
+                        <div class="down-content">
+                            <h2 style="color: #003366;">Module 5: Maintain Computer Systems and Networks</h2>
+
+
+
+                            <section>
+                                <h3>INTRODUCTORY ACTIVITY</h3>
+                                <p>Watch a short video on the importance of preventive maintenance for computers. Then,
+                                    answer the following questions:</p>
+                                <button onclick="location.href='https://youtu.be/ZYGND_SLqUQ?si=UMXBi8HaAFI92Ipf'"
+                                    class="btn">Go to video</button>
+                                <div class="question-container">
+                                    <label for="q1">1. Why is regular maintenance important for a computer
+                                        system?</label>
+                                    <textarea id="q1" placeholder="Type your answer here..."></textarea>
+                                </div>
+
+                                <div class="question-container">
+                                    <label for="q2">2. How does preventive maintenance help in avoiding system
+                                        failures?</label>
+                                    <textarea id="q2" placeholder="Type your answer here..."></textarea>
+                                </div>
+
+                                <div class="question-container">
+                                    <label for="q3">3. What can you do to keep your computer running smoothly?</label>
+                                    <textarea id="q3" placeholder="Type your answer here..."></textarea>
+                                </div>
+
+                                <div class="question-container">
+                                    <label for="q4">4. What are some common signs that indicate a computer system needs
+                                        maintenance?</label>
+                                    <textarea id="q4" placeholder="Type your answer here..."></textarea>
+                                </div>
+
+                                <div class="question-container">
+                                    <label for="q5">5. How does software maintenance differ from hardware
+                                        maintenance?</label>
+                                    <textarea id="q5" placeholder="Type your answer here..."></textarea>
+                                </div>
+
+                                <button onclick="submitAnswers()">Submit Answers</button>
+
+                                <!-- Results container -->
+                                <div id="results" style="margin-top: 30px; display:none;">
+                                    <h3>Your Answers:</h3>
+                                    <ul id="answers-list"></ul>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <a href="chap4-3.html">Back</a>
+                <a href="chap5-2.html">Next</a>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function submitAnswers() {
+            const answers = [];
+
+            // Collect answers from textareas
+            for (let i = 1; i <= 5; i++) {
+                const answer = document.getElementById(`q${i}`).value.trim();
+                answers.push(answer || "No answer provided.");
+            }
+
+            // Display answers
+            const resultsContainer = document.getElementById("results");
+            const answersList = document.getElementById("answers-list");
+
+            answersList.innerHTML = ""; // Clear previous results
+            answers.forEach((answer, index) => {
+                const listItem = document.createElement("li");
+                listItem.textContent = `Q${index + 1}: ${answer}`;
+                answersList.appendChild(listItem);
+            });
+
+            resultsContainer.style.display = "block";
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .question-container {
+            margin-bottom: 15px;
+        }
+
+        .question-container {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .question-container label {
+            font-size: 1em;
+            margin-bottom: 10px;
+            color: #333333;
+        }
+
+        textarea {
+            width: 100%;
+            max-width: 600px;
+            height: 100px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #cccccc;
+            font-size: 1em;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        textarea::placeholder {
+            color: #888888;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-family: 'Poppins', sans-serif;
+            /* Consistent font */
+            font-weight: 400;
+            text-decoration: none;
+            color: #fff;
+            /* White text */
+            background-color: #003366;
+            /* Consistent blue color */
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #00509e;
+            /* Darker blue on hover */
+        }
+    </style>
+
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Maintenance Quiz</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+            /* Adjusted for better contrast */
+            background: linear-gradient(to bottom, #f5f5f5, #e9ecef);
+            /* Subtle gradient for depth */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Section Titles */
+        h3.section-title {
+            font-size: 2.5rem;
+            /* Increased size for better hierarchy */
+            font-weight: bold;
+            color: #002b5c;
+            /* Slightly darker blue for more contrast */
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            /* Adds emphasis */
+            letter-spacing: 1px;
+        }
+
+        h4 {
+            font-size: 1.75rem;
+            /* Increased size slightly */
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        /* Content Blocks */
+        .quiz-questions {
+            background: #ffffff;
+            padding: 40px;
+            /* Increased padding for more breathing room */
+            margin-bottom: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            /* Slightly deeper shadow for effect */
+        }
+
+        /* Button Styling */
+        .btn {
+            background-color: #002b5c;
+            /* Enhanced button color for impact */
+            color: white;
+            padding: 15px 30px;
+            /* Larger button for better usability */
+            font-size: 1.125rem;
+            font-weight: bold;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #00509e;
+            transform: translateY(-4px);
+            /* Slightly enhanced hover effect */
+        }
+    </style>
+</head>
+
+<body>
+    <h3 class="section-title">Short Quiz</h3>
+    <p><strong>Instructions:</strong> Read each question carefully and type the correct letter (A, B, C, or D) in the
+        input box provided.</p>
+    <div class="quiz-questions">
+        <p>1. Which tool is commonly used to tighten or loosen screws in computer components?</p>
+        <p>A. Pliers &nbsp; B. Screwdriver &nbsp; C. Soldering iron &nbsp; D. Hammer</p>
+        <input type="text" id="quiz-q1" class="input-box" placeholder="Type A, B, C, or D">
+
+        <p>2. What should you do before opening a computer case to perform maintenance?</p>
+        <p>A. Disconnect it from the power source &nbsp; B. Turn it on to check if it's working</p>
+        <p>C. Shake the case to remove dust &nbsp; D. Touch all components to check for heat</p>
+        <input type="text" id="quiz-q2" class="input-box" placeholder="Type A, B, C, or D">
+
+        <p>3. Which type of screwdriver is typically used for assembling and disassembling
+            computer components?</p>
+        <p>A. Flat-head screwdriver &nbsp; B. Torx screwdriver &nbsp; C. Phillips-head
+            screwdriver &nbsp; D. Allen wrench</p>
+        <input type="text" id="quiz-q3" class="input-box" placeholder="Type A, B, C, or D">
+
+        <p>4. What is the purpose of an anti-static wrist strap when working on a computer?
+        </p>
+        <p>A. To prevent electrical shock from the power supply &nbsp; B. To protect
+            components from electrostatic discharge (ESD)</p>
+        <p>C. To keep hands steady while working &nbsp; D. To hold tools in place</p>
+        <input type="text" id="quiz-q4" class="input-box" placeholder="Type A, B, C, or D">
+
+        <p>5. What is the safest way to clean the inside of a computer case?</p>
+        <p>A. Using a wet cloth &nbsp; B. Blowing into the case with your mouth &nbsp; C.
+            Using compressed air &nbsp; D. Scrubbing it with a brush</p>
+        <input type="text" id="quiz-q5" class="input-box" placeholder="Type A, B, C, or D">
+
+        <p>6. Why is it important to follow a regular maintenance schedule for computers?
+        </p>
+        <p>A. To make the computer run slower &nbsp; B. To ensure optimal performance and
+            longevity</p>
+        <p>C. To increase the number of virus infections &nbsp; D. To decrease computer
+            temperature</p>
+        <input type="text" id="quiz-q6" class="input-box" placeholder="Type A, B, C, or D">
+
+        <p>7. Which tool is used to check voltage and power issues in computer components?
+        </p>
+        <p>A. Multimeter &nbsp; B. Soldering iron &nbsp; C. Screwdriver &nbsp; D. Thermal
+            paste</p>
+        <input type="text" id="quiz-q7" class="input-box" placeholder="Type A, B, C, or D">
+
+        <p>8. What should you do if you accidentally spill liquid on a keyboard?</p>
+        <p>A. Continue using it until it dries &nbsp; B. Shake it vigorously and keep using
+            it</p>
+        <p>C. Turn off the computer, unplug the keyboard, and let it dry completely &nbsp;
+            D. Pour more water to clean it properly</p>
+        <input type="text" id="quiz-q8" class="input-box" placeholder="Type A, B, C, or D">
+
+        <p>9. What is the correct way to dispose of old computer batteries?</p>
+        <p>A. Throw them in a regular trash bin &nbsp; B. Burn them to prevent pollution</p>
+        <p>C. Take them to an e-waste recycling center &nbsp; D. Store them in a drawer for
+            future use</p>
+        <input type="text" id="quiz-q9" class="input-box" placeholder="Type A, B, C, or D">
+
+        <p>10. When handling internal computer components, why is it important to hold
+            circuit boards by the edges?</p>
+        <p>A. To prevent leaving fingerprints &nbsp; B. To avoid damaging the sensitive
+            electronic components</p>
+        <p>C. To ensure a firm grip &nbsp; D. To make the components look cleaner</p>
+        <input type="text" id="quiz-q10" class="input-box" placeholder="Type A, B, C, or D">
+
+        <!-- Additional Questions Here -->
+
+        <button class="btn" onclick="checkQuizAnswers()">Check Quiz Answers</button>
+        <button class="btn" onclick="window.location.href='chap2-2.html'">Back to Home</button>
+        <div id="quiz-results" style="margin-top: 20px;"></div>
+    </div>
+
+    <script>
+        // Short Quiz: Check Multiple Choice Answers
+        function checkQuizAnswers() {
+            // Define the correct answers
+            const correctAnswers = {
+                quizQ1: "B",
+                quizQ2: "A",
+                quizQ3: "C",
+                quizQ4: "B",
+                quizQ5: "C",
+                quizQ6: "B",
+                quizQ7: "A",
+                quizQ8: "C",
+                quizQ9: "C",
+                quizQ10: "B"
+            };
+
+            // Collect user inputs
+            const userAnswers = {};
+            for (let i = 1; i <= 10; i++) {
+                userAnswers[`quizQ${i}`] = document.getElementById(`quiz-q${i}`).value.trim().toUpperCase();
+            }
+
+            // Validate answers
+            let results = "";
+            let score = 0;
+            Object.keys(correctAnswers).forEach((key, index) => {
+                if (userAnswers[key] === correctAnswers[key]) {
+                    score++;
+                    results += `<p>${index + 1}. Correct! (${userAnswers[key]})</p>`;
+                } else if (userAnswers[key] === "") {
+                    results += `<p>${index + 1}. No answer provided.</p>`;
+                } else {
+                    results += `<p>${index + 1}. Incorrect! The correct answer is <strong>${correctAnswers[key]}</strong></p>`;
+                }
+            });
+
+            // Display results
+            document.getElementById("quiz-results").innerHTML = `
+        <h4>Quiz Results:</h4>
+        ${results}
+        <p><strong>Your Score: ${score}/10</strong></p>
+      `;
+        }
+    </script>
+</body>
+
+</html>

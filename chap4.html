@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Template Mo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Lesson Overview</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <style>
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .nav-buttons a {
+            padding: 10px 20px;
+            background-color: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-buttons a:hover {
+            background-color: #00509e;
+        }
+
+        .question-text {
+            font-size: 16px;
+        }
+
+        .question-select {
+            font-size: 14px;
+            padding: 5px;
+        }
+
+        .feedback-text {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .submit-button {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+        .header-sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #003366;
+            /* Ensure background color is set */
+        }
+
+        .header-sticky .main-nav a {
+            color: #ffffff;
+        }
+
+        .header-sticky .main-nav .has-sub>a {
+            color: #ffffff;
+        }
+
+        .header-sticky .main-nav .sub-menu a {
+            color: #003366;
+        }
+
+        .header-sticky .main-nav .sub-menu a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+      <!-- ***** Header Area Start ***** -->
+      <header class="header-area header-sticky" style="background-color: #003366;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <a href="#" class="logo" style="color: #ffffff; cursor: default;">Chapter 5</a>
+
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="index.html" class="active"
+                                    style="color: #ffffff;">Home</a></li>
+
+                            <li class="has-sub">
+                                <a href="javascript:void(0)" style="color: #ffffff;">Lessons</a>
+                                <ul class="sub-menu">
+                                    <li><a href="chap1.html" style="color: #003366;">LO1: Diagnose</a></li>
+                                    <li><a href="chap2.html" style="color: #003366;">LO2: Plan</a></li>
+                                    <li><a href="chap3.html" style="color: #003366;">LO3: Inspect</a></li>
+                                    <li><a href="chap4.html" style="color: #003366;">LO4: Rectify</a></li>
+                                    <li><a href="chap5.html" style="color: #003366;">LO5: Maintain</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="references.html" style="color: #ffffff;">References</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <section class="heading-page header-text" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Module 4: Inspect and Test Computer Systems and Networks</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="meetings-page" id="meetings">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="meeting-single-item">
+                        <div class="down-content">
+                            <h2 style="color: #003366;">Lesson 4: Inspect and Test the Computer Systems and Networks
+                            </h2>
+                            <button onclick="location.href='pretest3.html'" class="btn">Go to Pre-Test</button>
+
+                            <section>
+                                <h3 style="font-size: 18px;">INTRODUCTION</h3>
+                                <p class="question-text">INTRODUCTORY ACTIVITY Let’s Review</p>
+
+                                <h3 style="font-size: 17px;">1. What is the primary goal of preventive maintenance?</h3>
+                                <select id="q1" name="q1" class="question-select">
+                                    <option value="">Select an option</option>
+                                    <option value="a">To repair broken equipment after failure</option>
+                                    <option value="b">To identify and fix minor issues before they become major defects
+                                    </option>
+                                    <option value="c">To replace old hardware regularly</option>
+                                    <option value="d">To install new software updates only when problems arise</option>
+                                </select>
+                                <p id="q1Feedback" class="feedback-text"></p>
+
+                                <h3 style="font-size: 17px;">2. Which of the following best describes Condition-Based
+                                    Maintenance (CBM)?</h3>
+                                <select id="q2" name="q2" class="question-select">
+                                    <option value="">Select an option</option>
+                                    <option value="a">Maintenance performed at regular time intervals regardless of the
+                                        system’s condition</option>
+                                    <option value="b">Maintenance that relies on real-time performance indicators to
+                                        determine necessary actions</option>
+                                    <option value="c">Emergency maintenance done after a major system failure</option>
+                                    <option value="d">A routine checkup that does not involve any data analysis</option>
+                                </select>
+                                <p id="q2Feedback" class="feedback-text"></p>
+
+                                <h3 style="font-size: 17px;">3. What is the best preventive measure for avoiding
+                                    computer overheating?</h3>
+                                <select id="q3" name="q3" class="question-select">
+                                    <option value="">Select an option</option>
+                                    <option value="a">Using high-power-consuming applications continuously</option>
+                                    <option value="b">Placing the computer in a well-ventilated area</option>
+                                    <option value="c">Keeping the computer on at all times</option>
+                                    <option value="d">Regularly deleting temporary files</option>
+                                </select>
+                                <p id="q3Feedback" class="feedback-text"></p>
+
+                                <h3 style="font-size: 17px;">4. Why is it important to update antivirus and spyware
+                                    protection regularly?</h3>
+                                <select id="q4" name="q4" class="question-select">
+                                    <option value="">Select an option</option>
+                                    <option value="a">To remove outdated software features</option>
+                                    <option value="b">To increase the computer’s processing speed</option>
+                                    <option value="c">To protect the system from emerging security threats</option>
+                                    <option value="d">To optimize storage space</option>
+                                </select>
+                                <p id="q4Feedback" class="feedback-text"></p>
+
+                                <h3 style="font-size: 17px;">5. Which of the following is a common software-related
+                                    issue that affects network performance?</h3>
+                                <select id="q5" name="q5" class="question-select">
+                                    <option value="">Select an option</option>
+                                    <option value="a">Loose power cables</option>
+                                    <option value="b">Faulty motherboard components</option>
+                                    <option value="c">Misconfigured network protocols</option>
+                                    <option value="d">Insufficient RAM</option>
+                                </select>
+                                <p id="q5Feedback" class="feedback-text"></p>
+
+                                <button onclick="submitAnswers()" class="submit-button">Submit Answers</button>
+                            </section>
+
+                            <script>
+                                function selectAnswer(questionId, answer) {
+                                    const currentAnswer = document.getElementById(questionId).value;
+                                    if (currentAnswer === answer) {
+                                        document.getElementById(questionId).value = '';
+                                        document.querySelectorAll(`[onclick="selectAnswer('${questionId}', '${answer}')]`)[0].classList.remove('selected');
+                                    } else {
+                                        document.getElementById(questionId).value = answer;
+                                        document.querySelectorAll(`[onclick="selectAnswer('${questionId}', '${answer}')]`)[0].classList.add('selected');
+                                        // Remove selection from other options
+                                        const otherOptions = document.querySelectorAll(`[onclick^="selectAnswer('${questionId}', ']`);
+                                        otherOptions.forEach(option => {
+                                            if (option !== document.querySelectorAll(`[onclick="selectAnswer('${questionId}', '${answer}')]`)[0]) {
+                                                option.classList.remove('selected');
+                                            }
+                                        });
+                                    }
+                                }
+
+                                function submitAnswers() {
+                                    const answers = {
+                                        q1: document.getElementById('q1').value,
+                                        q2: document.getElementById('q2').value,
+                                        q3: document.getElementById('q3').value,
+                                        q4: document.getElementById('q4').value,
+                                        q5: document.getElementById('q5').value
+                                    };
+
+                                    console.log(answers);
+
+                                    // Here you can add logic to check answers or send them to a server
+                                    const correctAnswers = {
+                                        q1: 'b',
+                                        q2: 'b',
+                                        q3: 'b',
+                                        q4: 'c',
+                                        q5: 'c'
+                                    };
+
+                                    for (let question in answers) {
+                                        if (answers[question] === correctAnswers[question]) {
+                                            document.getElementById(`${question}Feedback`).innerText = 'Correct!';
+                                            document.getElementById(`${question}Feedback`).style.color = 'green';
+                                        } else if (answers[question]) {
+                                            document.getElementById(`${question}Feedback`).innerText = `Incorrect. The correct answer is ${correctAnswers[question]}.`;
+                                            document.getElementById(`${question}Feedback`).style.color = 'red';
+                                        } else {
+                                            document.getElementById(`${question}Feedback`).innerText = 'Please select an answer.';
+                                            document.getElementById(`${question}Feedback`).style.color = 'blue';
+                                        }
+                                    }
+                                }
+                            </script>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <a href="chap3-3.html">Back</a>
+                <a href="chap4-2.html">Next</a>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
